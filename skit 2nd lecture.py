@@ -30,15 +30,14 @@ x,y = load_iris(return_X_y=True)
 print(x.shape)
 print(y.shape)
 #spltting dataset
-x_train, x_test , y_train,y_test = train_test_split(x,y,test_size=0.8)
+x_train, x_test , y_train,y_test = train_test_split(x,y,test_size=0.3)
 
 
 models = [LogisticRegression(),LinearRegression(),DecisionTreeClassifier(),KNeighborsClassifier(),GaussianNB(),]
 
 for model in models:
-    #dt=model.fit(x_train,y_train)
     cross_validation = cross_val_score(model,x,y,cv=10)
-    print(model.__class__.__name__)
+    print("------------",model.__class__.__name__,"------------")
     print(cross_validation.mean())
     print(cross_validation.std())
 
