@@ -50,14 +50,14 @@ dt4.fit(x_train,y_train)
 
 # To calculate the accuracy
 print("To Calculate the accuracy of the model\n")
-b = accuracy_score(dt.predict(x_test),(y_test))
+b = accuracy_score(dt.predict(x_test),y_test)
 print(b)
 
-b2 = accuracy_score(dt2.predict(x_test),(y_test))
+b2 = accuracy_score(dt2.predict(x_test),y_test)
 print(b2)
 
-b3 = accuracy_score(dt3.predict(x_test),(y_test))
+b3 = accuracy_score(dt3.predict(x_test),y_test)
 print(b3)
 
-b4 = accuracy_score(dt4.predict(x_test),(y_test))
+b4 = accuracy_score(dt4.predict(x_test),y_test)
 print(b4)
