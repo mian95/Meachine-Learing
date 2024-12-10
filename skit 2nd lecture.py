@@ -24,7 +24,6 @@ from sklearn.model_selection import cross_val_score
 
 
 #datasets
-model = LogisticRegression()
 x,y = load_iris(return_X_y=True)
 
 print(x.shape)
