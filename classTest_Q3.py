@@ -1,3 +1,8 @@
+"""
+Q#3: Import Naive Bayes classifier. Calculate Training and testing accuracies for at least three different datasets. The split size should be 60/40.
+"""
+
+
 from sklearn.datasets import load_wine,load_breast_cancer,load_digits
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score

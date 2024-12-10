@@ -1,3 +1,9 @@
+"""
+Q1: Import diabetes dataset and split data into training and testing sets for the following ratios: 50/50, 60/40, 70/30, 90/10, Report number of instances in training and testing sets for each ratio.
+
+Q2: Import wine dataset and split data into training and testing sets for the following ratios: 50/50, 60/40, 70/30, 90/10. Report number of instances in training and testing sets for each ratio.
+"""
+
 # Importing models
 from sklearn.datasets import load_wine
 from sklearn.model_selection import train_test_split
